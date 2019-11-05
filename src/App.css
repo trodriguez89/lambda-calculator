@@ -5,6 +5,8 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
 }
 .display {
     margin-top: 25px;
@@ -20,3 +22,46 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+
+.buttons {
+    width: 100px;
+    height: 100px;
+    font-size: 3.0rem;
+    /* padding: 5%; */
+    border-radius: 50px;
+    /* border: 2px solid red; */
+}
+
+.App {
+    display: "flex";
+    flex-direction: row;
+    border: 2px solid green;
+    /* flex-wrap: "row"; */
+    width: 100%;
+    
+}
+
+.buttons-contain {
+    border: 2px solid pink;
+    /* display: "flex"; */
+    /* flex-direction: "column"; */
+    /* flex-wrap: "wrap"; */
+    /* height: "500px"; */
+    width: "100%";
+    margin: "25px";
+}
+.specials-contain {
+    border: 2px solid blue;
+    width: 65%;
+    
+}
+
+.operator-contain {
+    border: 2px solid blue;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

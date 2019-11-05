@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
@@ -22,12 +22,18 @@ function App() {
   return (
     <div className="container">
       <Logo />
-      <Display/>
+      <Display output={displayNum} />
       <div className="App">
-        <Numbers />
-        <Operators />
-        <Specials />
-    
+        <div className="buttons-contain">
+          <div className ="specials-contain">
+          <Specials />
+          <Numbers />
+          </div>
+          <div className = "operator-contain">
+          <Operators />
+          </div>
+          </div>
+
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>
