@@ -10,10 +10,16 @@ import { numbers } from '../../../data'
 
 const Numbers = (props) => {
   const [numbersArray, setNumbers] = useState(numbers);
-  console.log(numbers)
+  const numberStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    width: "490px",
+    justifyContent: "space-around",
+    height: "450px",
+  }
   // STEP 2 - add the imported data to state
   return (
-    <div>
+    <div style={numberStyle}>
       {numbersArray.map((button, index) =>(
         <NumberButton key ={index} numbersArray ={button}/>
       ))}

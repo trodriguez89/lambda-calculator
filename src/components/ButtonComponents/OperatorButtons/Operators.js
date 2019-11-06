@@ -7,9 +7,16 @@ import {operators} from "../../../data";
 
 const Operators = (props) => {
   const [operatorArray] = useState(operators);
+  const operatorStyle = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    marginBottom: "13px",
+    height: "100%",
+  }
   // STEP 2 - add the imported data to state
   return (
-    <div>
+    <div style ={operatorStyle}>
       {operatorArray.map((button, index) =>(
         <OperatorButton key ={index} operatorInfo ={button}/>
       ))}

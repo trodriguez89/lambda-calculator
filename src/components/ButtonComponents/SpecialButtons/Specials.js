@@ -7,10 +7,17 @@ import {specials} from "../../../data";
 
 const Specials = (props) => {
   const [specialArray] = useState(specials);
+  const specialStyle = {
+    display: "flex",
+    justifyContent: "space-around",
+    width: "490px",
+    height: "110px",
+    paddingTop: "10px"
+  }
   // STEP 2 - add the imported data to state
 
   return (
-    <div>
+    <div style ={specialStyle}>
       {specialArray.map((button, index) => (
         <SpecialButton key={index} array={button}/>
       ))}
